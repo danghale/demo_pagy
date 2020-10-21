@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Book List</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Cover</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: "books/book", collection: @books %>
+    </tbody>
+  </table>
+
+  <%== pagy_bootstrap_nav(@pagy) %>
+</div>
